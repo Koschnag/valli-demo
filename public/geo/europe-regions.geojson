@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "scandinavia", "name": "Skandinavien", "color": "#2D6B4F" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[4.5, 57], [5, 62], [7, 65], [14, 71], [31, 70], [30, 65], [25, 60], [18, 56], [12, 55], [4.5, 57]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "british-isles", "name": "Britische Inseln", "color": "#5A73B5" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-11, 51], [-11, 59], [-5, 59], [-1, 61], [2, 58], [2, 51], [-5, 49], [-11, 51]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "western-europe", "name": "Westeuropa", "color": "#1C2D66" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-5, 42], [-5, 51], [2, 51], [7, 53], [7, 49], [6, 46], [3, 43], [-1, 42], [-5, 42]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "central-europe", "name": "Mitteleuropa", "color": "#23377A" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7, 46], [7, 55], [18, 55], [18, 49], [17, 46], [15, 45.5], [10, 46], [7, 46]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "iberian", "name": "Iberische Halbinsel", "color": "#E8A54B" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-10, 36], [-10, 44], [-1, 44], [3, 43], [4, 39], [0, 36], [-6, 36], [-10, 36]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "italian", "name": "Italienische Halbinsel", "color": "#4E936F" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7, 37], [6.5, 44], [7, 46], [10, 46], [14, 46], [15, 42], [18, 40], [16, 37], [12, 36], [7, 37]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "balkans", "name": "Balkan", "color": "#3A8464" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[14, 38], [14, 46], [18, 46], [22, 44], [29, 42], [28, 36], [22, 35], [18, 37], [14, 38]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "eastern-europe", "name": "Osteuropa", "color": "#162451" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[18, 44], [18, 55], [25, 55], [28, 50], [29, 44], [22, 44], [18, 44]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "baltic", "name": "Baltikum", "color": "#0F1B3D" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[20, 53.5], [20, 60], [25, 60], [28, 59], [28, 53.5], [25, 53.5], [20, 53.5]]]
+      }
+    }
+  ]
+}

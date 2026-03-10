@@ -1,0 +1,68 @@
+import { MoodCard } from "@/types/mood";
+
+export const moodCards: MoodCard[] = [
+  {
+    id: "adventure",
+    category: "adventure",
+    title: "Abenteuer",
+    description: "Wanderungen, Klettern, Rafting — du willst Action!",
+    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+    emoji: "🏔️",
+  },
+  {
+    id: "relaxation",
+    category: "relaxation",
+    title: "Entspannung",
+    description: "Strände, Spas, ruhige Seen — einfach mal abschalten.",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    emoji: "🌊",
+  },
+  {
+    id: "culture",
+    category: "culture",
+    title: "Kultur",
+    description: "Museen, Galerien, Architektur — Kunst & Inspiration.",
+    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+    emoji: "🎨",
+  },
+  {
+    id: "nightlife",
+    category: "nightlife",
+    title: "Nachtleben",
+    description: "Bars, Clubs, Live-Musik — die Nacht zum Tag machen.",
+    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+    emoji: "🌃",
+  },
+  {
+    id: "gastronomy",
+    category: "gastronomy",
+    title: "Kulinarik",
+    description: "Streetfood, lokale Märkte, Fine Dining — Genuss pur.",
+    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+    emoji: "🍽️",
+  },
+  {
+    id: "nature",
+    category: "nature",
+    title: "Natur",
+    description: "Wälder, Fjorde, Nationalparks — zurück zur Natur.",
+    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+    emoji: "🌿",
+  },
+  {
+    id: "history",
+    category: "history",
+    title: "Geschichte",
+    description: "Burgen, Ruinen, Altstädte — die Vergangenheit erleben.",
+    image: "https://images.unsplash.com/photo-1555990538-1085d1e45b98?w=800&q=80",
+    emoji: "🏰",
+  },
+  {
+    id: "romance",
+    category: "romance",
+    title: "Romantik",
+    description: "Sonnenuntergänge, Kanäle, Weingüter — für Verliebte.",
+    image: "https://images.unsplash.com/photo-1499678329028-101435549a4e?w=800&q=80",
+    emoji: "💕",
+  },
+];

@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary: Deep navy/blue (Estonian inspired) */
+  --color-primary-900: #0A1128;
+  --color-primary-800: #0F1B3D;
+  --color-primary-700: #162451;
+  --color-primary-600: #1C2D66;
+  --color-primary-500: #23377A;
+  --color-primary-400: #3A5199;
+  --color-primary-300: #5A73B5;
+  --color-primary-200: #8A9FCC;
+  --color-primary-100: #C5CFE6;
+  --color-primary-50: #E8ECF5;
+
+  /* Accent: Teal/Forest green (Visit Estonia inspired) */
+  --color-accent-900: #142E22;
+  --color-accent-800: #1E4433;
+  --color-accent-700: #2D6B4F;
+  --color-accent-600: #3A8464;
+  --color-accent-500: #4E936F;
+  --color-accent-400: #65A580;
+  --color-accent-300: #89BDA0;
+  --color-accent-200: #B1D5C1;
+  --color-accent-100: #D1ECDE;
+  --color-accent-50: #EDF8F1;
+
+  /* Warm accent */
+  --color-warm-500: #E8A54B;
+  --color-warm-400: #F0B96A;
+  --color-warm-300: #F5CE8E;
+
+  /* Surfaces */
+  --color-surface-50: #FAFBFC;
+  --color-surface-100: #F4F6F8;
+  --color-surface-200: #E8ECF0;
+  --color-surface-300: #D1D8E0;
+
+  /* Text */
+  --color-text-primary: #0A1128;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #8896AA;
+  --color-text-inverse: #FAFBFC;
+
+  /* Semantic */
+  --color-error: #E53E3E;
+  --color-success: #38A169;
+
+  --background: var(--color-surface-50);
+  --foreground: var(--color-text-primary);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--color-primary-700);
+  --color-primary-dark: var(--color-primary-900);
+  --color-primary-light: var(--color-primary-100);
+  --color-accent: var(--color-accent-500);
+  --color-accent-dark: var(--color-accent-700);
+  --color-accent-light: var(--color-accent-100);
+  --color-warm: var(--color-warm-500);
+  --color-warm-light: var(--color-warm-300);
+  --color-surface: var(--color-surface-50);
+  --color-surface-alt: var(--color-surface-100);
+  --color-surface-border: var(--color-surface-200);
+  --color-muted: var(--color-text-muted);
+  --color-error: var(--color-error);
+  --color-success: var(--color-success);
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Leaflet map style overrides for Estonian design */
+.leaflet-tile {
+  filter: saturate(0.3) brightness(1.05);
+}
+
+.leaflet-container {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Smooth page transitions */
+@view-transition {
+  navigation: auto;
 }
